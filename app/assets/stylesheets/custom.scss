@@ -195,7 +195,22 @@ input {
   } 
 }
 
+@media(max-device-width: 800px) {
+  #main-nav {
+    display: inline-flex;
+    }
+  #down{
+    margin-top: 40px; 
+  } 
+}
+
 @media(max-width: 400px) {
+  #logo{
+    display:none;
+  }
+}
+
+@media(max-device-width: 400px) {
   #logo{
     display:none;
   }
