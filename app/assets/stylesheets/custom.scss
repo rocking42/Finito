@@ -166,6 +166,16 @@ input {
   }
 }
 
+#logo{ 
+    display: flex;
+    float: right;
+    line-height: 45px;
+ }
+
+ nav {
+   float: left;
+ }
+
 /* miscellaneous */
 
 .debug_dump {
@@ -175,3 +185,22 @@ input {
   margin-top: 45px;
   @include box_sizing;
 }
+
+@media only screen and (max-width: 800px) {
+  #main-nav {
+    display: inline-flex;
+    }
+  #down{
+    margin-top: 40px; 
+  } 
+}
+
+@media only screen and (max-width: 400px) {
+  #logo{
+    display:none;
+  }
+}
+
+
+
+
