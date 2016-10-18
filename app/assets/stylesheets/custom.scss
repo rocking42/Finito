@@ -34,7 +34,10 @@ textarea {
 
 /* header */
 
+
 #logo {
+  line-height: 32px;
+  display: flex;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -81,6 +84,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
+  width:100%;
   color: $light-grey;
   a {
     color: $grey;
@@ -99,6 +103,9 @@ footer {
         margin-left: 15px;
     }
   }
+}
+nav {
+  float: right;
 }
 
 /* sidebar */
@@ -180,14 +187,22 @@ input {
   margin-left: 0;
 }
 
-#logo{ 
-    display: flex;
-    float: right;
-    line-height: 45px;
+
+
+ #footer {
+   float: right;
  }
 
- nav {
-   float: left;
+ /* Users index */
+
+ .users {
+  list-style: none;
+  margin:0;
+  li{
+    overflow:auto;
+    padding:10px 0;
+    border-bottom: 1px solid $light-grey
+  }
  }
 
 /* miscellaneous */
@@ -209,6 +224,9 @@ input {
   #down{
     margin-top: 40px; 
   } 
+  #logo {
+    line-height: 46px;
+  }
 }
 
 @media(max-device-width: 800px) {
